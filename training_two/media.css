@@ -2,4 +2,46 @@
     .employees_cards {
         grid-template-columns: repeat(2, auto);
     }
+.we-are_info h3 {
+    font-size: 16px;
+}
+.we-are_info p {
+    font-size: 14px;
+    
+}
+.team_we-are h1 {
+    font-size: 24px;   
+}
+}
+@media (max-width:640px) {
+    .team_employees-card {
+        width: 220px;
+        height: inherit;
+    }
+    .employees_cards {
+        padding-right: 5px;
+        justify-content: center;
+    }
+    .team_employees-card img {
+        height: inherit;
+    }
+}
+@media (max-width:480px) {
+    .employees_cards {
+        grid-template-columns: repeat(1, auto);
+    }
+    .team_employees-card:nth-child(2), .team_employees-card:nth-child(5) {
+        margin-top: 0;
+    }
+    .we-are_info h3 {
+        font-size: 14px;
+    }
+    .we-are_info p {
+        font-size: 11px;
+        
+    }
+    .team_we-are h1 {
+        font-size: 20px;
+        padding-top: 9px;   
+    }
 }

@@ -44,6 +44,7 @@
     display: grid;
     justify-content: space-evenly;
     grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
     gap:50px;
     
 }
@@ -51,7 +52,7 @@
     position: relative;
     width: 250px;
 }
-.team_employees-card:nth-child(2n) {
+.team_employees-card:nth-child(2), .team_employees-card:nth-child(5) {
     margin-top: 100px;
 }
 .team_employees-card span {
@@ -66,7 +67,7 @@
 }
 .team_employees-card img {
     width: inherit;
-    max-height: 370px;
+    height: 370px;
     background-size: contain;
 }
 .team_employees-card p {
