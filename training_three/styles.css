@@ -1,0 +1,82 @@
+* {
+  margin: 0 0 5px 0;
+}
+
+body {
+  background-color: #181719;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  display: block;
+}
+
+/***********************************************/
+.header-interior {
+  display: grid;
+  grid-template-areas: "logo menu";
+  justify-content: space-around;
+}
+
+.tmpl-logo {
+  grid-area: logo;
+}
+
+.tmpl-menu {
+  grid-area: menu;
+}
+
+.main-menu_menu-items {
+  display: flex;
+  gap: 85px;
+  list-style-type: none;
+}
+
+.main-interior-blocks {
+  display: flex;
+  gap: 40px;
+}
+
+.modern-blocks_left {
+  flex: 0 0 35%;
+}
+
+.modern-blocks-right {
+  flex: 1 0 50%;
+  position: relative;
+}
+.modern-blocks-right .interior-img {
+  width: inherit;
+  max-height: 770px;
+}
+
+.comment {
+  position: absolute;
+  top: 89%;
+  right: 15%;
+  width: 410px;
+  height: 180px;
+  background-color: #181719;
+}
+.comment .comment-photo {
+  grid-area: photo;
+  max-width: 75px;
+  max-height: 75px;
+  border-radius: 50%;
+}
+.comment .tmpl-name {
+  grid-area: name;
+}
+.comment .tmpl-info {
+  grid-area: info;
+}
+.comment .tmpl-desc {
+  grid-area: desc;
+}/*# sourceMappingURL=styles.css.map */
