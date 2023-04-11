@@ -1,0 +1,114 @@
+.anim-header {  
+    background: rgb(41,27,72);
+    background: linear-gradient(311deg, rgba(41,27,72,1) 0%, rgba(89,64,148,1) 35%, rgba(111,54,126,1) 69%, rgba(58,20,81,1) 100%);  
+    animation:  bg-header;
+    animation-duration: 10s;
+    transition-timing-function:ease-in-out;
+    min-height: 100px;
+}
+.anim-header::after {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    animation: lineHeader;
+    animation-duration: 10s;
+    transition-timing-function:ease-in-out;
+}
+
+.anim-hello {
+    position: absolute;
+    left: 45%;
+    top: 7%;
+    width: 21ch;
+    height: 20px;
+    font-size: 20px;
+    font-family: monospace;
+    overflow: hidden;
+    border-right: 4px solid orange;
+    animation: printText 0.75s step-end, infinite, printed-text 4s steps(21);
+}
+.anim-name {
+    position: absolute;
+    left: 45%;
+    top: 12%;
+    width: 25ch;
+    height: 20px;
+    font-size: 20px;
+    font-family: monospace;
+    overflow: hidden;
+    border-right: 4px solid orange;
+    animation: printText 0.75s step-end, infinite, printed-text 4s steps(25);
+}
+.isOpacity {
+    opacity: 0;
+    animation: isOpacity 4s ease-in-out;
+}
+.isReplace {
+    border: 0;
+    text-align: center;
+    animation: isReplace 3s ease-in-out;
+}
+@keyframes bg-header {    
+    0% {
+        background: rgb(41,27,72);
+        background: linear-gradient(311deg, rgba(41,27,72,1) 0%, rgba(89,64,148,1) 35%, rgba(111,54,126,1) 69%, rgba(58,20,81,1) 100%);       
+        min-height: 400px;
+        opacity: 0;
+      }
+  
+    100% {
+        background: rgb(41,27,72);
+        background: linear-gradient(311deg, rgba(41,27,72,1) 0%, rgba(89,64,148,1) 35%, rgba(111,54,126,1) 69%, rgba(58,20,81,1) 100%);
+        min-height: 100px;
+        transition:cubic-bezier(.5, -1, .5, 2);
+        opacity: 1;
+    }
+    
+  }
+@keyframes lineHeader {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+@keyframes printText {
+    0% {
+        border-color: orange;
+    }
+    50% {
+        border-color: transparent;
+    }
+    100% {
+        border-color: orange;
+    }
+}
+@keyframes printed-text {
+    from {
+        width: 0;
+    }
+}
+@keyframes isOpacity {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes isReplace {
+    0% {
+        border-right: 4px solid orange;
+        text-align: left;
+    }
+    100% {
+        border: 0;
+        text-align: center;
+    }
+}

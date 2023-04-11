@@ -1,0 +1,51 @@
+* {
+    margin: 0 0 5px 0;
+}
+
+header {   
+    min-height: 400px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border: 1px solid rgb(41,27,72);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    position: absolute;
+    left: 50%;
+    top: 45%;
+
+    background-size: contain;
+    z-index: 2;
+}
+.box a {
+    color:white;
+}
+main {
+    height: 900px;
+    position: relative;
+}
+.iLikeIt {
+    position: relative;
+    height: inherit;
+}
+.iLikeIt a {
+    position: absolute;
+    left: 47%;
+    top: 20%;
+    padding: 10px;
+    border: 3px solid;
+    border-radius: 25px;
+    border-color: rgb(41,27,72);
+    color:rgb(41,27,72);
+}
+#aboutMe {
+    opacity: 0;
+}
