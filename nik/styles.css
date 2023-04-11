@@ -32,6 +32,16 @@ main {
     height: 900px;
     position: relative;
 }
+#hello {
+    position: absolute;
+    left: 45%;
+    top: 7%;
+}
+#myName {
+    position: absolute;
+    left: 45%;
+    top: 12%;
+}
 .iLikeIt {
     position: relative;
     height: inherit;
@@ -48,4 +58,43 @@ main {
 }
 #aboutMe {
     opacity: 0;
+}
+#ilike {
+    position: absolute;
+    left: 47%;
+    top: 17%;
+}
+.likeCoffee {
+    position: absolute;
+    left: 47%;
+    top: 20%;    
+}
+.coffee {
+    width: 240px;
+    height: 340px;
+    background-image: url(/nik/img/l41vnp_bO3o.jpg);
+    transform: rotate(-20deg);
+    left: 5%;
+    top: 5%;
+    background-size: cover;
+    position: absolute;
+    box-shadow: 5px 9px;
+}
+.likeAnime {
+    position: absolute;
+    left: 47%;
+    top: 20%; 
+    height: 25px;
+}
+.anime {
+    width: 240px;
+    height: 340px;
+    background-image: url(/nik/img/FLUeE06XoAQQ0Zg.jpg);
+    right: 5%;
+    top: 11%;
+    transform: rotate(45deg);
+    background-size: cover;
+    position: absolute;
+    border: 3px solid rgb(41,27,72);
+    box-shadow: 2px 5px;
 }

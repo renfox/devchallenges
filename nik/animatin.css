@@ -20,22 +20,8 @@
     transition-timing-function:ease-in-out;
 }
 
-.anim-hello {
-    position: absolute;
-    left: 45%;
-    top: 7%;
-    width: 21ch;
-    height: 20px;
-    font-size: 20px;
-    font-family: monospace;
-    overflow: hidden;
-    border-right: 4px solid orange;
-    animation: printText 0.75s step-end, infinite, printed-text 4s steps(21);
-}
-.anim-name {
-    position: absolute;
-    left: 45%;
-    top: 12%;
+
+.anim-text {    
     width: 25ch;
     height: 20px;
     font-size: 20px;
@@ -44,6 +30,14 @@
     border-right: 4px solid orange;
     animation: printText 0.75s step-end, infinite, printed-text 4s steps(25);
 }
+.anim-text20 {
+    width: 20ch;
+    animation: printed-text 4s steps(20);
+}
+.anim-text30 {
+    width: 30ch;
+    animation: printed-text 4s steps(30);
+}
 .isOpacity {
     opacity: 0;
     animation: isOpacity 4s ease-in-out;
@@ -51,7 +45,18 @@
 .isReplace {
     border: 0;
     text-align: center;
-    animation: isReplace 3s ease-in-out;
+    animation: isReplace 10s ease-in-out;
+}
+.trCoffee {
+    transform: rotate(70deg);
+    left: 10%;   
+    animation: trRtLAnim 10s ease-in-out ;
+}
+
+.trAnime {
+    left: 75%;
+    transform: rotate(315deg); 
+    animation: trRtRAnim 10s ease-in-out ;
 }
 @keyframes bg-header {    
     0% {
@@ -110,5 +115,26 @@
     100% {
         border: 0;
         text-align: center;
+    }
+}
+@keyframes trRtLAnim {
+    0% {
+        left: 47%;
+        transform: rotate(0);
+    }
+    100% {
+        left: 10%;
+        transform: rotate(70deg);
+    }
+}
+
+@keyframes trRtRAnim {
+    0% {
+        left: 47%;
+        transform: rotate(0);
+    }
+    100% {
+        left: 75%;
+        transform: rotate(315deg);
     }
 }
