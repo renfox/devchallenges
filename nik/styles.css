@@ -31,6 +31,9 @@ header {
 main {
     height: 900px;
     position: relative;
+    background-image: url(/nik/img/1614787296_91-p-staraya-bumaga-fon-188.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 #hello {
     position: absolute;
@@ -97,4 +100,52 @@ main {
     position: absolute;
     border: 3px solid rgb(41,27,72);
     box-shadow: 2px 5px;
+}
+.likePers {
+    position: absolute;
+    left: 47%;
+    top: 20%; 
+    height: 25px;
+}
+.person {
+    width: 240px;
+    height: 340px;
+    background-image: url(/nik/img/pln32z0k3bkc4o0gog888c804og80c.jpg);
+    left: 17%;
+    top: 52%;
+    transform: rotate(45deg);
+    background-size: cover;
+    position: absolute;
+    border: 3px solid rgb(41,27,72);
+    box-shadow: 2px 5px;
+}
+#aboutMe2 {
+    opacity: 0;
+}
+.desc1 {
+    position: absolute;
+    left: 40%;
+    top: 12%;
+}
+.desc2 {
+    position: absolute;
+    left: 40%;
+    top: 17%;
+}
+.desc2-block {
+    width: 240px;
+    height: 340px;
+    background-image: url(/nik/img/photo_2023-04-10_18-48-44.jpg);
+    right: 23%;
+    top: 50%;
+    transform: rotate(319deg);
+    background-size: cover;
+    position: absolute;
+    border: 3px solid rgb(41,27,72);
+    box-shadow: 2px 5px;
+}
+.likesewing {
+    position: absolute;
+    left: 47%;
+    top: 20%;
 }

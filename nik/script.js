@@ -138,4 +138,38 @@ const myName = document.querySelector('#myName');
       }, 26000);
       const bgAnime = document.querySelector('.anime');
       OpsPlus(bgAnime, 100, 31000)
+
+      setTimeout(function() { sayHi('#likePers', 'anim-text'); }, 37000);
+      setTimeout(function() { sayHi('#likePers', 'anim-text30'); }, 37000);
+      setTimeout(function(){
+        document.querySelector('#likePers').classList.add("trPerson");
+      }, 40000);
+      const bgPerson = document.querySelector('.person');
+      OpsPlus(bgPerson, 100, 45000);
+
+      OpsPlus(aboutMeTwo, 20, 51000); 
+});
+
+const aboutMeTwo = document.querySelector('#aboutMe2')
+aboutMeTwo.addEventListener('click', function() {
+    aboutMeTwo.removeAttribute('hidden');
+    OpsMinus(aboutMeTwo, 10,  2000);
+    setTimeout(function() { sayHi('#desc1', 'anim-text'); }, 5000);
+    setTimeout(function() { sayHi('#desc1', 'anim-text50'); }, 5000);
+    setTimeout(function() { sayHi('#desc2', 'anim-text'); }, 9000);
+    setTimeout(function() { sayHi('#desc2', 'anim-text50'); }, 9000);
+    
+    
+      setTimeout(function(){
+        document.querySelector('.desc2').classList.add("trDesc2");
+      }, 13000);
+      const bgDesc2 = document.querySelector('.desc2-block');
+      OpsPlus(bgDesc2, 100, 15000);
+
+      const desc1 = document.querySelector('#desc1');
+      OpsMinus(desc1, 10,  17000);
+
+      setTimeout(function() { sayHi('#likesewing', 'anim-text'); }, 21000);
+    setTimeout(function() { sayHi('#likesewing', 'anim-text20'); }, 21000);
+    setTimeout(function() { sayHi('#likesewing', 'trSewing'); }, 23000);
 });

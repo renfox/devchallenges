@@ -38,6 +38,10 @@
     width: 30ch;
     animation: printed-text 4s steps(30);
 }
+.anim-text50 {
+    width: 50ch;
+    animation: printed-text 4s steps(50);
+}
 .isOpacity {
     opacity: 0;
     animation: isOpacity 4s ease-in-out;
@@ -57,6 +61,22 @@
     left: 75%;
     transform: rotate(315deg); 
     animation: trRtRAnim 10s ease-in-out ;
+}
+.trPerson {
+    transform: rotate(45deg);
+    top: 57%;
+    left: 23%;
+    animation: trRtL1Anim 10s ease-in-out ;
+}
+.trDesc2 {
+    transform: rotate(229deg);
+    top: 73%;
+    left: 47%;
+    animation: trRtR1Anim 10s ease-in-out ;
+}
+.trSewing {
+    top:10%;
+    animation: trRtCAnim 10s ease-in-out ;
 }
 @keyframes bg-header {    
     0% {
@@ -136,5 +156,37 @@
     100% {
         left: 75%;
         transform: rotate(315deg);
+    }
+}
+@keyframes trRtL1Anim {
+    0% {
+        left: 47%;
+        top: 20%;
+        transform: rotate(0);
+    }
+    100% {
+        top: 57%;
+        left: 23%;
+        transform: rotate(45deg);
+    }
+}
+@keyframes trRtR1Anim {
+    0% {
+        left: 40%;
+        top: 17%;
+        transform: rotate(0);
+    }
+    100% {
+        top: 73%;
+        left: 47%;
+        transform: rotate(229deg);
+    }
+}
+@keyframes trRtCAnim {
+    0% {
+        top: 20%;
+    }
+    100% {
+        top:10%
     }
 }
