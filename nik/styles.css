@@ -31,7 +31,7 @@ header {
 main {
     height: 900px;
     position: relative;
-    background-image: url(/nik/img/1614787296_91-p-staraya-bumaga-fon-188.jpg);
+    background-image: url(../nik/img/1614787296_91-p-staraya-bumaga-fon-188.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -75,7 +75,7 @@ main {
 .coffee {
     width: 240px;
     height: 340px;
-    background-image: url(/nik/img/l41vnp_bO3o.jpg);
+    background-image: url(../nik/img/l41vnp_bO3o.jpg);
     transform: rotate(-20deg);
     left: 5%;
     top: 5%;
@@ -92,7 +92,7 @@ main {
 .anime {
     width: 240px;
     height: 340px;
-    background-image: url(/nik/img/FLUeE06XoAQQ0Zg.jpg);
+    background-image: url(../nik/img/FLUeE06XoAQQ0Zg.jpg);
     right: 5%;
     top: 11%;
     transform: rotate(45deg);
@@ -110,7 +110,7 @@ main {
 .person {
     width: 240px;
     height: 340px;
-    background-image: url(/nik/img/pln32z0k3bkc4o0gog888c804og80c.jpg);
+    background-image: url(../nik/img/pln32z0k3bkc4o0gog888c804og80c.jpg);
     left: 17%;
     top: 52%;
     transform: rotate(45deg);
@@ -135,7 +135,7 @@ main {
 .desc2-block {
     width: 240px;
     height: 340px;
-    background-image: url(/nik/img/photo_2023-04-10_18-48-44.jpg);
+    background-image: url(../nik/img/photo_2023-04-10_18-48-44.jpg);
     right: 23%;
     top: 50%;
     transform: rotate(319deg);

@@ -61,7 +61,7 @@ playHeader.addEventListener('click', function() {
     const bgBox = document.querySelector('.box'); 
     headerClass.classList.add("anim-header");
     playHeader.textContent = '';
-    bgBox.style.backgroundImage = "url(/nik/img/nik.jpg)"; 
+    bgBox.style.backgroundImage = "url(../nik/img/nik.jpg)"; 
     
     
     setTimeout(function() { sayHi('#hello', 'anim-text'); }, 9000);
