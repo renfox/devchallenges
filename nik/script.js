@@ -172,4 +172,29 @@ aboutMeTwo.addEventListener('click', function() {
       setTimeout(function() { sayHi('#likesewing', 'anim-text'); }, 21000);
     setTimeout(function() { sayHi('#likesewing', 'anim-text20'); }, 21000);
     setTimeout(function() { sayHi('#likesewing', 'trSewing'); }, 23000);
+    const bntModal = document.querySelector('.btnModal');
+    bntModal.removeAttribute('hidden');
+    OpsPlus(bntModal, 10, 27500); 
+  });
+
+document.getElementById('open-modal').addEventListener('click', function () {
+  const modal = document.getElementById('modal');
+  const modalContent = modal.querySelector('.modal-content');
+
+  modal.style.display = 'block';
+  OpsPlus(modal, 100, 1000); 
+  setTimeout(() => {
+      modalContent.style.transform = 'translateY(-50%) rotateY(0deg)';
+  }, 100);
+
+  modal.addEventListener('click', function (event) {
+      if (event.target === modal) {
+          modalContent.style.transform = 'translateY(-50%) rotateY(-180deg)';
+          setTimeout(() => {
+              modal.style.display = 'none';
+          }, 1000);
+      }
+  });
 });
+
+
